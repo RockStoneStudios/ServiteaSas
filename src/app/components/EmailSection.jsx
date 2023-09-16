@@ -2,6 +2,7 @@ import React from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Facebook from '../../../public/facebook.svg';
+import Instagram from '../../../public/instagram.svg'
 import Link from "next/link";
 import Image from "next/image";
 
@@ -20,12 +21,18 @@ const EmailSection = () => {
           {" "}
           Encuentranos en redes sociales y observa mas de nuestro trabajo y amor con el que hacemos lo que mejor que sabemos hacer
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 justify-evenly">
           <Link href="https://www.facebook.com/servitea.antioquia">
             <Image src={Facebook} alt="Github Icon" />
           </Link>
+          <Link href="https://www.facebook.com/servitea.antioquia">
+            <a href="tel:+123456789">
+            <Image src="/images/phone.png" alt="Github Icon" width={40} height={40} />
+
+            </a>
+          </Link>
           <Link href="linkedin.com">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image src={Instagram} alt="Linkedin Icon" />
           </Link>
         </div>
       </div>

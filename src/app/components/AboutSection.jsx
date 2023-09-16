@@ -31,10 +31,10 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Yoni Orrego</li>
-        <li>Miguel Orrego</li>
-        <li>Dahiana</li>
+      <ul className="list-disc pl-2 ">
+        <li>Jhony Steban Orrego Gutierrez</li>
+        <li> Miguel Angel Orrego </li>
+        <li>Dahiana Martinez Ortiz</li>
         
       </ul>
     ),
