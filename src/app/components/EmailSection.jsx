@@ -25,7 +25,7 @@ const EmailSection = () => {
           <Link href="https://www.facebook.com/servitea.antioquia">
             <Image src={Facebook} alt="Github Icon" />
           </Link>
-          <Link href="https://www.facebook.com/servitea.antioquia">
+          <Link href="tel:+573137206362">
             <a href="tel:+123456789">
             <Image src="/images/phone.png" alt="Github Icon" width={40} height={40} />
 
