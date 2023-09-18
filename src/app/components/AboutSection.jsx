@@ -35,6 +35,7 @@ const TAB_DATA = [
         <li>Jhony Steban Orrego Gutierrez</li>
         <li> Miguel Angel Orrego </li>
         <li>Dahiana Martinez Ortiz</li>
+        <li>Richar Andres Giraldo Pulgarin</li>
         
       </ul>
     ),

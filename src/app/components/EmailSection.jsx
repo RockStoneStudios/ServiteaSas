@@ -10,7 +10,7 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative z-50 fixed"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
@@ -26,12 +26,12 @@ const EmailSection = () => {
             <Image src={Facebook} alt="Github Icon" />
           </Link>
           <Link href="tel:3137206362">
-            <a href="tel:+123456789">
+           
             <Image src="/images/phone.png" alt="Github Icon" width={40} height={40} />
 
-            </a>
+          
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.instagram.com/servitea_antioquia/?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D%3D">
             <Image src={Instagram} alt="Linkedin Icon" />
           </Link>
         </div>
