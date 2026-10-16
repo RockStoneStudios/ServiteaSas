@@ -5,13 +5,7 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   // VENTAS
-  {
-    id: 1,
-    title: "Mirage Life New",
-    description: "Minisplit on-off 12.000 BTU - 220V - Alto rendimiento",
-    image: "/images/projects/mirage-life-new.webp",
-    tag: ["Todo", "Ventas"],
-  },
+ 
   {
     id: 2,
     title: "Mirage Inverter X",
