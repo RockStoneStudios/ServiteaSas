@@ -5,7 +5,6 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   // VENTAS
- 
   {
     id: 2,
     title: "Mirage Inverter X",
@@ -42,7 +41,7 @@ const projectsData = [
     image: "/images/projects/aires6.jpg",
     tag: ["Todo", "Reparaciones"],
   },
-  // REPUESTOS - aca agregas los que quieras
+  // REPUESTOS
   {
     id: 10,
     title: "Sensor Temperatura",
@@ -62,7 +61,7 @@ const projectsData = [
   {
     id: 12,
     title: "Bomba Desagüe Lavadora",
-    description: "Askoll 30W Mabe LG 【entity-Samsung¦canonical_name=Samsung】",
+    description: "Askoll 30W Mabe LG Samsung",
     image: "/bomba.webp",
     tag: ["Todo", "Repuestos"],
     badge: "LAVADORA",
@@ -119,25 +118,26 @@ export default function ProjectsSection() {
   const filtered = projectsData.filter((p) => p.tag.includes(tag));
 
   return (
-    <section id="projects" className="w-full py-10">
+    <section id="projects" className="w-full py-10 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
       <div className="text-center mb-8">
-        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text- tracking-widest text-white/60">
-          <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-          SOPETRÁN • SAN JERÓNIMO • MEDELLÍN
+        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-xs sm:text-sm tracking-widest text-white/60">
+          <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+          <span className="truncate">SOPETRÁN • SAN JERÓNIMO • MEDELLÍN</span>
         </div>
-        <h2 className="mt-5 text- sm:text-5xl font-black tracking-tight text-white">
+        <h2 className="mt-5 text-3xl sm:text-5xl font-black tracking-tight text-white">
           Mis <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Servicios</span>
         </h2>
       </div>
 
-      <div className="flex justify-center mb-8 px-4">
-        <div className="flex items-center gap-1 rounded-full border border-white/10 bg-[#1a1a1a] p-1.5">
+      {/* Barra de etiquetas totalmente responsiva con scroll horizontal en móviles */}
+      <div className="flex justify-start sm:justify-center mb-8 overflow-x-auto pb-2 scrollbar-none">
+        <div className="flex items-center gap-1 rounded-full border border-white/10 bg-[#1a1a1a] p-1.5 shrink-0 mx-auto">
           {TAGS.map((t) => (
             <button
               key={t}
               onClick={() => setTag(t)}
-              className={`shrink-0 rounded-full px-5 py-2.5 text- font-medium transition-all ${
-                tag === t? "bg-white text-black shadow" : "text-white/60 hover:text-white hover:bg-white/10"
+              className={`shrink-0 rounded-full px-4 sm:px-5 py-2 text-xs sm:text-sm font-medium transition-all ${
+                tag === t ? "bg-white text-black shadow" : "text-white/60 hover:text-white hover:bg-white/10"
               }`}
             >
               {t}
@@ -151,7 +151,7 @@ export default function ProjectsSection() {
           <motion.li
             key={project.id}
             initial={{ opacity: 0, y: 15 }}
-            animate={isInView? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
             transition={{ duration: 0.3, delay: i * 0.04 }}
             layout
           >
