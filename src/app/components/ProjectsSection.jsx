@@ -4,43 +4,59 @@ import ProjectCard from "./ProjectCard";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
-  // VENTAS
+  // VENTAS (Nuevos aires acondicionados)
   {
     id: 2,
-    title: "Mirage Inverter X",
-    description: "Minisplit INVERTER 12.000 BTU - Ahorro 60%",
-    image: "/images/projects/aires2.png",
+    title: "Aux Inverter",
+    description: "Minisplit Inverter Alta Eficiencia - Ahorro de energía",
+    image: "/aux-inverter.jpeg",
     tag: ["Todo", "Ventas"],
+    badge: "AIRE",
   },
   {
     id: 3,
-    title: "LG Dual Cool",
-    description: "Minisplit on-off 12.000 BTU - Gold Fin",
-    image: "/images/projects/aires3.jpg",
+    title: "Hisense Inverter",
+    description: "Tecnología Inverter avanzada con control inteligente",
+    image: "/hisense_inverter.jpeg",
     tag: ["Todo", "Ventas"],
+    badge: "AIRE",
   },
   {
     id: 4,
-    title: "LG Inverter Dual",
-    description: "Minisplit INVERTER - Enfriamiento rápido",
-    image: "/images/projects/aires4.jpg",
+    title: "LG Inverter",
+    description: "Enfriamiento rápido y silencioso con garantía",
+    image: "/lg-inverter.jpeg",
     tag: ["Todo", "Ventas"],
+    badge: "AIRE",
   },
+  {
+    id: 18,
+    title: "Midea Minisplit",
+    description: "Climatización confiable para tus espacios",
+    image: "/midea.jpeg",
+    tag: ["Todo", "Ventas"],
+    badge: "AIRE",
+  },
+  {
+    id: 19,
+    title: "Mirage Inverter",
+    description: "Alto rendimiento y diseño moderno",
+    image: "/mirage.jpeg",
+    tag: ["Todo", "Ventas"],
+    badge: "AIRE",
+  },
+  {
+    id: 20,
+    title: "Rowa Climatización",
+    description: "Equipos potentes y de excelente durabilidad",
+    image: "/rowa.jpeg",
+    tag: ["Todo", "Ventas"],
+    badge: "AIRE",
+  },
+
   // REPARACIONES
-  {
-    id: 5,
-    title: "Mantenimiento Preventivo",
-    description: "Limpieza, carga de gas R410A / R32",
-    image: "/images/projects/aires5.jpg",
-    tag: ["Todo", "Reparaciones"],
-  },
-  {
-    id: 6,
-    title: "Instalación Certificada",
-    description: "Garantía real en Sopetrán y Occidente",
-    image: "/images/projects/aires6.jpg",
-    tag: ["Todo", "Reparaciones"],
-  },
+ 
+
   // REPUESTOS
   {
     id: 10,
@@ -129,7 +145,7 @@ export default function ProjectsSection() {
         </h2>
       </div>
 
-      {/* Barra de etiquetas totalmente responsiva con scroll horizontal en móviles */}
+      {/* Barra de etiquetas con scroll horizontal adaptada para móviles */}
       <div className="flex justify-start sm:justify-center mb-8 overflow-x-auto pb-2 scrollbar-none">
         <div className="flex items-center gap-1 rounded-full border border-white/10 bg-[#1a1a1a] p-1.5 shrink-0 mx-auto">
           {TAGS.map((t) => (
