@@ -7,6 +7,7 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 import CategoriesSection from "./components/CategoriesSection";
+import GoogleMapsEmbed from "./components/GoogleMapsEmbed";
 
 export default function Home() {
   return (
@@ -45,6 +46,8 @@ export default function Home() {
         <section id="projects" className="py-8 md:py-12 border-t border-white/[0.06]">
           <ProjectsSection />
         </section>
+
+        <GoogleMapsEmbed/>
 
         {/* 6. CONTACT - ANTES py-20 md:py-20 - AHORA PEGADITO */}
         <section id="contact" className="py-8 md:py-12">
